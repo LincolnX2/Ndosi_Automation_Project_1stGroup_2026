@@ -37,6 +37,7 @@ Write action methods that interact with these elements.
 Call page methods directly in test scripts.
 Example: LoginPage.java
 
+
 import org.openqa.selenium.*;
 
 import org.openqa.selenium.support.*;
@@ -75,5 +76,24 @@ public class LoginPage {
 
 }
 
+
+Key Concepts in POM
+The Page Object Model follows a structured approach that revolves around key components such as Page Classes, Locators, and Methods. Understanding these concepts is essential for building efficient and maintainable test automation frameworks.
+
+Page Classes
+
+Each web page in the application is represented by a separate class file in the Page Object Model. This class acts as a container for the page’s web elements and related actions. By organizing pages into distinct classes, POM keeps the test code clean and easy to maintain.
+
+Locators in POM
+
+Locators define how to identify web elements on a page. POM uses locators such as ID, name, XPath, CSS selectors, or other strategies to map elements in the page classes. This centralized approach makes updating locators easier when the UI changes.
+
+Methods in POM
+
+Methods are functions within the page classes that perform actions on the page’s elements. These methods abstract user interactions such as clicking a button, entering text, or retrieving page data. Test scripts can call these methods to perform actions, improving code readability and reusability.
+
+Platforms like BrowserStack further streamline POM-based automation by enabling testers to execute tests on real browsers and devices without the need for complex local setups.
+
+This allows teams to focus on writing clean, maintainable code while ensuring cross-browser and cross-device compatibility at scale.
 
 
